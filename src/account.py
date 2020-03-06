@@ -14,6 +14,11 @@ class Account():
         return self.balance
 
     def withdraw(self, amount):
+        if self.balance < amount:
+            raise NotEnoughMoney("You don't have enough money in the account!")
         self.balance -= amount
         self.statement.add_transaction(0, amount, self.balance)
         return self.balance
+
+class NotEnoughMoney(Exception):
+    pass

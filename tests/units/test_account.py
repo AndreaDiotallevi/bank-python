@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import MagicMock  
-from src.account import Account
+from src.account import Account, NotEnoughMoney
 from src.statement import Statement
 
 @pytest.fixture
@@ -18,10 +18,16 @@ def test_print_empty_balance(capsys, mock_statement):
 def test_deposit_returns_current_balance():
     account = Account()
 
-    assert account.deposit(1000) == 1000
+    assert account.deposit(1) == 1
 
 def test_withdraw_returns_current_balance():
     account = Account()
-    account.deposit(1000)
+    account.deposit(1)
 
-    assert account.withdraw(500) == 500
+    assert account.withdraw(1) == 0
+
+def test_withdraw_raises_an_error_if_not_enough_balance():
+    account = Account()
+    
+    with pytest.raises(NotEnoughMoney):
+        account.withdraw(1)
