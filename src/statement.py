@@ -13,6 +13,6 @@ class Statement():
 
     def format_transactions(self):
         formatted_balance = [self.HEADER]
-        for transaction in self.transactions:
+        for transaction in reversed(self.transactions):
             formatted_balance.append(transaction.format())
         return "\n".join(formatted_balance)

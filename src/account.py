@@ -12,3 +12,8 @@ class Account():
         self.balance += amount
         self.statement.add_transaction(amount, 0, self.balance)
         return self.balance
+
+    def withdraw(self, amount):
+        self.balance -= amount
+        self.statement.add_transaction(0, amount, self.balance)
+        return self.balance

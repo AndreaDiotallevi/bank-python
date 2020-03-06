@@ -19,5 +19,3 @@ class Transaction():
 
     def format_decimals(self, amount):
         return "{0:.2f}".format(amount)
-
-        print(string.replace("geeks", "Geeks")) 

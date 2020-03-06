@@ -19,3 +19,9 @@ def test_deposit_returns_current_balance():
     account = Account()
 
     assert account.deposit(1000) == 1000
+
+def test_withdraw_returns_current_balance():
+    account = Account()
+    account.deposit(1000)
+
+    assert account.withdraw(500) == 500
