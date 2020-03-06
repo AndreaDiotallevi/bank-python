@@ -10,5 +10,5 @@ class Account():
 
     def deposit(self, amount):
         self.balance += amount
-        self.statement.add_transaction(0, amount, self.balance - amount)
+        self.statement.add_transaction(amount, 0, self.balance)
         return self.balance
