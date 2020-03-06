@@ -12,7 +12,7 @@ class Statement():
         return self.transactions
 
     def format_transactions(self):
-        formatted_balance = self.HEADER
+        formatted_balance = [self.HEADER]
         for transaction in self.transactions:
-            formatted_balance += "\n" + transaction.format()
-        return formatted_balance
+            formatted_balance.append(transaction.format())
+        return "\n".join(formatted_balance)
