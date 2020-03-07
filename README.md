@@ -108,7 +108,7 @@ To run the tests type ```pytest```
 * Require the model files with:
   - ```from src.account import Account```
   - ```from src.statement import Statement```
-  - ```from src.transaction import Transaction"```
+  - ```from src.transaction import Transaction```
 
 ## Feature Test
 
