@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/AndreaDiotallevi/bank-python.svg?branch=master)](https://travis-ci.com/AndreaDiotallevi/bank-python) [![Test Coverage](https://api.codeclimate.com/v1/badges/65678327fbf59b19d876/test_coverage)](https://codeclimate.com/github/AndreaDiotallevi/bank-python/test_coverage)
+
 # Bank Tech Test
 
 [Description](#description) | [Requirements](#requirements) | [Acceptance Criteria](#acceptance-criteria) | [User Stories](#user-stories) | [Domain Models](#domain-models) | [Design Approach](#design-approach) | [Code Structure](#code-structure) | [Technologies Used](#technologies-used) | [Getting Started](#getting-started) | [How to Run the Tests](#how-to-run-the-tests) | [How to Run the App](#how-to-run-the-app) | [Feature Test](#feature-test)
