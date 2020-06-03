@@ -6,7 +6,7 @@
 
 ## Description
 
-A python implementation of the bank tech test, which shows object-oriented programming principles and decoupled test suites.
+A Python implementation of the bank tech test, which shows object-oriented programming principles and decoupled test suites.
 
 ## Requirements
 
